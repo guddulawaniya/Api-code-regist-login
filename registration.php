@@ -24,11 +24,6 @@ $REFERRAL_CODE = $_POST['referral_code'];
 $query = "INSERT INTO `registration` (`firstname`, `Lastname`, `Mobilenumber`, `Email`, `Date_of_birth`, `Country`, `States`, `City`, `Gender`, `Referral_code`)
  VALUES ('$FIRST_NAME', '$LAST_NAME', '$MOBILE_NO', '$EMAIL_ID', '$DOB', '$COUNTRY', '$STATE', '$CITY', '$GENDER', '$REFERRAL_CODE');";
 
-// $query = "INSERT INTO `registration` (`firstname`, `Lastname`, `Mobilenumber`, `Email`, `Date_of_birth`, `Country`, `States`, `City`, `Gender`, `Referral_code`) 
-// VALUES ($FIRST_NAME, $LAST_NAME,$MOBILE_NO, $EMAIL_ID, $DOB, $COUNTRY, $STATE, $CITY, $GENDER, $REFERRAL_CODE);";
-
-// $query = "INSERT INTO registraion_table () 
-// VALUES ()";
 
 $result = $conn->query($query);
 
